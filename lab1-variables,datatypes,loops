@@ -1,0 +1,26 @@
+#q1&q2
+a = 13 # integer
+b = 3.5 # float
+c = 'Anmol' #string
+is_d = True #boolean
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(is_d))
+
+##q3&q4
+x=int(b)#converting float to integer
+y=str(a)#converting integer to string
+z=bool(c)#converting string to bool value
+e=float(a)#converting integer to float
+user_input=input('Enter a number')
+number = int(user_input)
+
+#q5
+x=10
+y=x
+print(id(x))
+print(id(y))
+x=10
+y=5
+print (x is y )
