@@ -1,0 +1,39 @@
+# 
+mini calculator 
+while True:
+    
+        num1=int(input('Give a number'))
+        num2=int(input('Give another number'))
+        operation=(input('type an operation betwen +-/*'))
+        if operation == '+':
+            print(num1+num2)
+            
+            elif operation == '-':
+                print(num1-num2)
+            
+            elif operation == '/':
+                print(num1/num2)
+                break
+        else:
+            print(num1*num2)
+
+
+#guessing game
+import random
+
+secret = random.randint(1,100)
+
+while guess != secret:
+    guess = int(input('Guess the number'))
+    if guess == secret :
+        print('You are right')
+    elif guess < secret :
+        print('you are lower')
+    elif guess>secret:
+        print('you are higher')
+
+    else:
+        quit=input('are you sure you want to quit?(y/n)')
+        if quit!=n:
+            break
+        
