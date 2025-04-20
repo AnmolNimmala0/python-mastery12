@@ -24,3 +24,52 @@ print(id(y))
 x=10
 y=5
 print (x is y )
+
+Lab 2 loops
+#q2
+num = 1234
+rev=0
+while num>0:
+    last_digit=num%10
+    rev=rev*10+last_digit
+    num=num//10
+print(rev)
+#q3 (find odd/even and prime)
+num = 1234
+if (num%2==0):
+    print('even')
+else:
+    print('odd')
+
+n = int(input('Enter a number'))
+is_prime= True
+for i in range(2,int(n**0.5)+1):
+    if n % i == 0:
+        is_prime = False
+        break
+#q4
+ print("1.Hello")
+    print("2.Bye")
+    print("3.Call")
+    choice = int(input("select a number from 1 to 3 "))
+    if choice==1:
+        print("Hello")
+    elif choice==2:
+        print("Bye")
+        
+    else:
+        print('invalid')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
