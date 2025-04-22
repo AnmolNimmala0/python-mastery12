@@ -1,0 +1,47 @@
+#lab 3 and lab 4
+Lab 3: Strings & String ManipulationString slicing, indexing, and formatting.
+.upper(), .lower(), .replace(), .split().
+Palindrome and anagram checker.
+Count vowels, consonants, words.
+Lab 4: Lists, Tuples, Sets, DictionariesCreate and manipulate lists: append, remove, sort.
+Nested lists and list comprehensions.
+Use tuples in loops.
+Add/remove/search in sets.
+Dictionary CRUD (Create, Read, Update, Delete).
+
+solutions:
+word = "madam"
+print(word==word[::-1])
+a = "listen"
+b = "silent"
+print(sorted(a)==sorted(b))
+s = "Python is powerful"
+vowels = 'aeiouAEIOU'
+
+v = sum(1 for char in s if char in vowels)
+c = sum(1 for char in s if char.isalpha() and char not in vowels)
+d=  len(s.split())
+print(v)
+print(c)
+print(d)
+#Create and manipulate lists: append, remove, sort
+nums = [5, 3, 9, 1]
+nums.append(10)
+nums.remove(3)
+nums.sort()
+print(nums)
+matrix = [[1, 2], [3, 4]]
+print(matrix[1][1])
+squares = [ x**2 for x in range(5)]
+print(squares)
+#Use tuples in loops.
+pair = [(1, 'a'), (2, 'b')]
+for num,char in pair:
+    print(num,char)
+s = {1, 2, 3}
+s.add(10)
+s.remove(2)
+print(s)
+student = {'name':'alex','age':20}
+student['grade']='A'
+print(student['name']
