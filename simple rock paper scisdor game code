@@ -1,0 +1,15 @@
+import random
+choices= ['rock','scissor','paper']
+user=input('type a tool from the choices:')
+computer=random.choice(choices)
+print(f'computer chose {computer}')
+if user==computer:
+    print('its a tie')
+elif user=='scissor' and computer=='paper' or \
+        user=='rock' and computer=='scissor' or \
+        user=='paper' and computer=='rock':
+    print('You winn motherfukekekkrr')
+elif user in choices:
+    print('you lose')
+else:
+    print('invalid input')
